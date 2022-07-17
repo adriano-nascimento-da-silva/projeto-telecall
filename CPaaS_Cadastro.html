@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adriano">
+    <meta name="description" content="Telecall">
+    <meta name="keywords" content="Projeto, Telecall">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Tela de Cadastro CPaaS</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/393db28875.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="css/CPaaS_cadastroLogin.css">
+</head>
+<body>   
+    <div class="registration-form">
+        <form action="#" method="get">
+            <div class="titulo">
+                <h1 id="registro">CADASTRO DE USUÁRIO</h1>
+                <label id="registro1">Esperávamos por você. Seja bem-vindo!</label>
+            </div>
+            <img src="imagens/Logo TElecall.png" alt="logo Telecall" width="290px" height="100px" class="logo" >
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+                    <!-- MENSAGENS DE ERRO OU SUCESSO PARA LOGIN -->
+            <div id="erro">Verifique se digitou algo errado</div>
+            <div id="sucesso">Você está sendo dirigido à página de login</div>
+            
+            <div class="form-group">
+                <span id="labelUsuario" class="span">Usuário</span>
+                <input type="text" class="form-control item" id="usuario" placeholder="Digite seu nome completo" minlength="15" maxlength="60" required>            
+            </div>
+            <div class="form-group">
+                <span id="labelDataNascimento" class="span">Data Nascimento</span>
+                <input type="text" class="form-control item" id="dataNascimento" placeholder="dd/mm/aaaa" required>
+            </div>
+            <div class="form-group">
+                <span id="labelSexo" class="span">Gênero (sexo)</span>
+                <input type="text" class="form-control item" id="sexo" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <span id="labelEndereco" class="span">Endereço Completo</span>
+                <input type="text" class="form-control item" id="endereco" maxlength="300" placeholder="" required>
+            </div>
+                <div class="form-group">
+                    <span id="labelNomeMae" class="span">Nome Mãe</span>
+                    <input type="text" class="form-control item" id="nomeMae" placeholder="" minlength="15" maxlength="60" required>
+                </div>
+            <div class="form-group">
+                <span id="labelCpf" class="span">CPF</span>
+                <input type="text" class="form-control item" id="cpf" placeholder="" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <span id="labelLogin" class="span">Login</span>
+                <input type="text" class="form-control item" id="login" placeholder="" maxlength="6" required>
+            </div>
+            <div class="form-group">
+                <span id="labelSenha" class="span">Senha</span>
+                <input type="password" class="form-control item" id="senha" placeholder="" maxlength="8" required>
+                <i id="verSenha" class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-group">
+                <span id="labelConfirmSenha" class="span">Confirma Senha</span>
+                <input type="password" class="form-control item" id="confirmaSenha" placeholder="" maxlength="8" required>
+                <i id="ConfirSenha" class="fa-solid fa-eye"></i> 
+            </div>
+            <div class="form-group">
+                <span id="labelEmail" class="span">E-mail</span>
+                <input type="email" class="form-control item" id="email" placeholder="Ex: seu_email@***.com.br" maxlength="80" required>
+            </div>
+            <div class="form-group">
+                <span id="labelTelCelular" class="span">Telefone Celular</span>
+                <input type="text" class="form-control item" id="telCelular" placeholder="Ex: (+55) 21-****-****" required>
+            </div>
+            <div class="form-group">
+                <span id="labelTelFixo" class="span">Telefone Fixo</span>
+                <input type="text" class="form-control item" id="telFixo" placeholder="(Ex: (+55) 21-****-****" required>
+            </div>
+            
+            <div class="form-group">
+                <a href="#" target="_self" style="text-decoration:none"><button type="button" class="btn btn-block create-account" onclick="cadastrarUser();">Cadastrar Usuário</button></a>
+            </div>
+        </form>
+        <div class="social-media">
+            <h5 id="title">Criar Perfil em suas Contas Sociais</h5>
+            <div class="social-icons">
+                <a href="https://pt-br.facebook.com/" target="_self"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="https://www.google.com/intl/pt/gmail/about/" target="_self"><i class="icon-social-google" title="Google"></i></a>
+                <a href="https://twitter.com/" target="_self"><i class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="javascript/CPaaS_Cadastro.js"></script>
+
+</body>
+</html>

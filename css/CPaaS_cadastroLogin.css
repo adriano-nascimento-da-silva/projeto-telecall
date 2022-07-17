@@ -1,0 +1,207 @@
+/* Variáveis cores */
+:root{
+    --main-color: #407bff;
+    --link-color: #666666;
+    --text1: #999999;
+    --highlight-text: #333333;
+    --input-text: #555555;
+    --white-color: #ffffff;
+    --points-list: #cccccc;
+    --line-input: #d9d9d9;
+}
+
+/* fontes */
+
+
+@font-face{
+    font-family: Poppins-Regular;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face{
+    font-family: Poppins-Medium;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face{
+    font-family: Poppins-SemiBold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+body{
+    background-color: #7e2525;
+}
+/* Título inicial: Cadastro Usuário, chamada usuário */
+.tituloInicial{
+    margin-bottom: 50px;
+}
+/* Mensagens boas-vindas */
+#registro{
+    font-family: Poppins-Bold;
+    font-size: 30px;
+    color:#7e2525;
+    display: flex;
+    justify-content: center;
+}
+
+#registro1{
+    font-family: Poppins-Bold;
+    display: flex;
+    justify-content: center;
+    color:#7e2525;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: var(--white-color);
+    max-width: 600px;
+    margin: auto;
+    padding: 100px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 5px 10px #ffffff50;
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #7e2525;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.form-group{
+    position: relative;
+}
+
+/* OLHO MOSTRA SENHA */
+.fa-eye{
+    position:absolute;
+    display: flex;
+    justify-content: right;
+    top: 40px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--link-color);
+    font-size: 1.3em;
+}
+
+.registration-form .create-account{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #7e2525;
+    border: none;
+    color: var(--white-color);
+    margin-top: 50px;
+}
+
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: var(--white-color);
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 5px 10px #ffffff50;
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+    color: #7e2525
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: #7e2525;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: var(--white-color);
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.span{
+    Padding: 20px;
+    font-family: Poppins-Medium, sans-serif;
+    color: #7e2525;
+}
+
+#title{
+    font-family: Poppins-Bold;
+    color:#7e2525;
+}
+/* MENSAGENS DE VALIDAÇÃO */
+
+#erro{
+    text-align: center;
+    color:#ff0000;
+    background-color: #ffbbbb;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 30px;
+    display: none; /*Aparecerá mensagem em um bloco, para logar ou quando há erro.*/
+} 
+
+#sucesso{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 30px;
+    display: none; /*Aparecerá mensagem em um bloco, para logar ou quando há erro.*/
+}
+
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}

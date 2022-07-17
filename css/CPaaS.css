@@ -1,0 +1,896 @@
+/* GERAIS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px;
+}
+
+
+p, li {
+  color: #444;
+  font-size: 14px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+
+header, .navbar {
+  background-color: #ca1c2a;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  margin: -13px -16px;
+  color: #fff;
+}
+
+.navbar-brand.hover {
+  color: #fff;
+}
+
+#navbar-links a {
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+}
+
+
+/* SLIDER DO CARROSSEL*/
+
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 90vh;
+}
+
+.carousel-inner,
+.carousel-item img {
+  object-fit: fill;
+}
+
+.carousel-indicators .active {
+  background-color: #65DAF9;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 40px;
+  width: 30px;
+}
+
+
+
+/*barra de navegação - Internet */
+
+#about-area {
+  background-color: #F9F9F9;
+}
+
+.main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-title::after {
+  content: " ";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+#about-list i {
+  color: #ca1c2a;
+  margin-right: 15px;
+}
+
+.dropdown-item {
+  background-color: #ca1c2a;
+}
+
+.dropdown-item:hover {
+  background-color: #d94949;
+}
+
+.dropdown-menu {
+  left: -20%
+}
+
+
+.nav-item span, i {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+#cpass {
+  margin-top: 3px;
+}
+
+#banner-carroussel {
+  margin-top: 35px;
+}
+
+#logo {
+  max-width: 90%;
+}
+
+/* Serviços da empresa */
+
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box img {
+  margin-bottom: 25px;
+}
+
+
+.service-box i, .service-box h4 {
+  transition: .5s;
+}
+
+.service-box i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.service-box h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-box:hover>i, .service-box:hover>h4 {
+  color: #ca1c2a;
+}
+
+/* Dados da empresa - Paralax, e círculos animados */
+
+.circle-box div {
+  padding: 0 40px;
+
+}
+
+.progressbar-text {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#data-area p {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+/* Time Empresa */
+
+.card-body {
+  text-align: center;
+}
+
+/* Trabalhe Conosco */
+
+#apply-area {
+  height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+  height: 100%;
+}
+
+#apply-area .apply-box {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+#company-img {
+  background-image: url('../imagens/empresa.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+#pattern-img h4, #pattern-img p {
+  color: #FFF;
+}
+
+#pattern-img h4 {
+  margin-top: 8%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#pattern-img p {
+  margin-bottom: 20px;
+}
+
+#apply-btn {
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: #FFF;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ca1c2a;
+}
+
+.main-btn {
+  background-color: #ca1c2a;
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+}
+
+#apply-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/* Portfólio */
+
+.project-box {
+  margin-bottom: 30px;
+}
+
+#filter-btn-box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#portfolio-area .filter-btn {
+  color: #444;
+  border: 1px solid #444;
+  background-color: transparent;
+  text-transform: none;
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+  color: #FFF;
+  border: 1px solid #ca1c2a;
+  background-color: #ca1c2a;
+}
+
+/* newsletter */
+
+#news-area {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+
+#news-area p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#email-input {
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #ca1c2a;
+  display: inline;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40px;
+}
+
+#news-btn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #ca1c2a;
+  background-color: #ca1c2a;
+  color: #FFF;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 0 30px;
+  margin-left: -130px;
+  position: absolute;
+  transition: .5s;
+}
+
+#news-btn:hover {
+  background-color: #FFF;
+  color: #ca1c2a;
+}
+
+/* Call To Action */
+
+#call-area {
+  background-color: #ca1c2a;
+  text-transform: uppercase;
+}
+
+#call-area .row {
+  display: block;
+  text-align: center;
+}
+
+#call-area .container {
+  padding: 40px 100px;
+}
+
+#call-area p {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  display: inline;
+}
+
+#call-area #call-btn {
+  background-color: #FFF;
+  color: #ca1c2a;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 20px;
+  width: auto;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+
+#contact-area {
+  text-align: center;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ca1c2a;
+}
+
+.contact-box i {
+  /*faz o círculo em volta do ícone*/
+  color: #444;
+  border: solid 1px #444;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-left: 2px;
+}
+
+.contact-box p {
+  font-size: 16px;
+}
+
+.contact-tile {
+  /*estilização span*/
+  font-weight: bold;
+  color: #ca1c2a;
+}
+
+#msg-box p {
+  font-size: 22px;
+}
+
+
+#contact-form input[type="text"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+#contact-form .main-btn {
+  width: 120px;
+  height: 50px;
+}
+
+#contact-form .main-btn:hover {
+  color: #ca1c2a;
+  background-color: transparent;
+  border-color: #ca1c2a;
+}
+
+/* copyright*/
+
+#copy-area {
+  background-color: #F1F1F1;
+}
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+}
+
+#copy-area .container a {
+  font-weight: bold;
+  color: #444;
+}
+
+#copy-area .container a:hover {
+  text-decoration: none;
+  color: #ca1c2a;
+}
+
+
+
+
+
+/* Responsividade */
+
+@media(max-width: 768px) {
+
+  /* geral */
+  .container {
+    padding: 20px 0;
+  }
+
+  /* slider - passando fotos*/
+
+  
+  
+  #mainSlider .carousel-inner, #mainSlider .carousel-item, carousel {
+    height: auto;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 28px;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+
+  /* about - imagem centraliza*/
+  #about-area img {
+    /**/
+    margin-top: 100px;
+  }
+
+  /* Serviços da empresa  */
+  .service-box img {
+    margin-right: 10px;
+  }
+
+  /* data - diminui letras e melhora visão dos círculos */
+  .circle-box div {
+    padding: 0 10px;
+  }
+
+  #data-area p {
+    font-size: 16px;
+  }
+
+  /* Time */
+  .card-title {
+    font-size: 11px;
+  }
+
+  .card-text {
+    font-size: 8px;
+  }
+
+  /* apply */
+  #apply-area .apply-box {
+    padding: 50px 25px;
+  }
+
+  /* news */
+  #news-area p {
+    /*largura texto diminui e encaixa no container*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #email-input {
+    /*adequa largura do input ao texto do parágrafo*/
+    width: 70%;
+  }
+
+  #call-area {
+    /*afasta os elementos do container*/
+    margin-top: 30px;
+  }
+
+  #call-area .container {
+    padding: 30px;
+  }
+
+  #call-area p,
+  #call-area #call-btn {
+    font-size: 16px;
+  }
+
+  .contact-box i {
+    width: 55px;
+    height: 50px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+
+}
+
+/* Aumentar e diminuir Letra */
+
+#btnAumentar, #btnDiminuir {
+  width: 4%;
+  height: 20%;
+  font-size: 15px;
+  background-color: #ca1c2a;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bolder;
+  color: #fff;
+}
+
+#aumentaDiminui {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* darkMode */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#darkMode {
+  margin-top: 15px;
+  padding-right: 30px;
+}
+
+body.dark {
+  background-color: #0b0b0b;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-sun {
+  color: #f1c40f;
+  font-size: 15px;
+}
+
+.fa-moon {
+  color: #f39c12;
+  font-size: 15px;
+}
+
+@media(max-width: 425px) {
+
+  /* slider */
+  #mainSlider {
+    margin-top: 90px;
+  }
+
+  /* #mainSlider .carousel-caption {
+    top: 5%;
+  } */
+
+  /* #mainSlider .carousel-caption h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  } */
+
+  /* #mainSlider .carousel-caption p {
+    display: none;
+  } */
+
+  /* .carousel-caption .main-btn {
+    
+    font-size: 14px;
+  } */
+
+  /* about */
+  .main-title {
+    font-size: 22px;
+  }
+
+  #about-area img {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* data */
+  .circle-box {
+    width: 50%;
+  }
+
+  #team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  /* apply */
+  #apply-area {
+    height: auto;
+  }
+
+  #company-img {
+    display: none;
+  }
+
+  /* filter */
+  #portfolio-area .filter-btn {
+    margin-bottom: 20px;
+  }
+
+  .project-box {
+    width: 50%;
+  }
+
+  /* news */
+  #news-area .main-title {
+    font-size: 24px;
+  }
+
+  #news-area p {
+    font-size: 16px;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+
+  /* call to act */
+  #call-area p,
+  #call-area #call-btn {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0;
+    width: 50%;
+  }
+
+  /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+NOTAS
+=====
+
+LINHA 44: CONFIGURA OS PADDINGS DOS LINKS
+LINHA 55: CONFIGURA FIGURAS COM SLIDERS EM METADE DA PÁGINA
+LINHA 68: BULLETS do slider (3 traços abaixo das figuras no carrousel) ficam azuis
+LINHA 89: CONFIGURAÇÃO DO TRAÇO ABAIXO DO TÍTULO: 100% internet
+LINHA 118: DESCOLA UMA CAIXA DA OUTRA
+LINHA 167: ( > ) - Este seletor verifica os elementos que estão dentro da CLASSE do SERVICE BOX que são (ícone - i, e o h4)
+LINHA 175: Padding aqui, vai espaçar o texto que ficará dentro do círculo.
+LINHA 179: configuração Classe que vem dentro da biblioteca de círculo. 
+LINHA 310: INPUTS Tem um tamanho de borda diferentes dos outros elementos. BORDER-BOX comunica que a borda é o limite entre eles,
+            sendo assim, consegue-se deixar os INPUTS igual aos outros elementos com mesma propriedade de altura e largura.
+
+
+RESPONSIVIDADE===
+
+LINHA 452: Na configuração container, ele aproxima as divs uma das outras. 
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+NÃO ESTÁ TRABALHANDO COM MENSAGENS EMBAIXO DO CAROUSEL
+
+#mainSlider .carousel-caption {
+    top: 30%;
+} */
+
+/* #mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+} */
+/* 
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+} */
+
+/* 
+.main-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-color: #65DAF9;
+} */

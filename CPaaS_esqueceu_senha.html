@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adriano">
+    <meta name="description" content="Telecall">
+    <meta name="keywords" content="Projeto, Telecall">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Tela confirmação de senha CPaaS</title>
+
+    <script src="https://kit.fontawesome.com/393db28875.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="css/CPaaS_esqueceu_Senha.css">
+    
+</head>
+
+<body>
+    
+    <div class="container"> 
+        <div class="container-login">
+            <div class="wrap-login">
+                <img src="./imagens/Logo TElecall.png" alt="logo Telecall" class="img-telecall">
+                <form class="login-form" method="get" action="#">
+                    <span class="login-form-title">Cadastrar Nova Senha</span>
+
+                    <!-- MENSAGENS DE ERRO OU SUCESSO PARA LOGIN -->
+                 <div id="erro1">Verifique se digitou algo errado</div>
+                 <div id="sucesso1">Você está sendo dirigido à página de login</div>
+                    
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" id="cpf" type="text" name="cpf" maxlength="14" autocomplete="off" required>
+                        <span id="labelCpf" class="focus-input-form" data-placeholder="CPF"></span> 
+                    </div>
+
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" id="senha" type="password" name="password" maxlength="8" required>
+                        <span id="labelSenha" class="focus-input-form" data-placeholder="Senha"></span>
+                        <i id="verSenha" class="fa-solid fa-eye"></i> 
+                    </div>
+
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" id="confirmaSenha" type="password" name="password" maxlength="8" required>
+                        <span id="labelConfirmSenha" class="focus-input-form" data-placeholder="Confirma Senha"></span>
+                        <i id="ConfirSenha" class="fa-solid fa-eye"></i> 
+                    </div>
+                    
+                    <div class="container-login-form-btn">
+                        <a href="#" target="_self" style="text-decoration:none"><button class="login-form-btn" onclick="cadastrar(); return false">Cadastrar</button></a>
+                    </div>
+                </form>
+            </div>
+            <img src="./imagens/28787.jpg" alt="imagem login" width="300" height="250" class="margin-left-50">
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>        
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> 
+    <script src="./javascript/CPaaS_esqueceu_senha.js"></script> 
+</body>
+
+</html>
+
+
+
+<!-- 
+PARA QUE SERVE?
+
+LINHA 32 - AUTOCOMPLETE="OFF" ==> NÃO ACEITA AUTO-SUGESTÕES DO NAVEGADOR
+  
+<i class="fa-solid fa-eye-slash"></i>   ==> esconde senha senha
+<i class="fa-solid fa-eye"></i> ==> ==> revela senha senha senha
+
+EM LINKS (EXTERNOS E INTERNOS) não esquecer sempre, para que semanticamente fique boa a página, de colocar 
+as relações dos links:
+
+<a href="http/www.ig.com.br" rel="external"></>
+<a href="http/www.ig.com.br" target="_blank" rel="external"></> (podemos usar também _self, etc. Podemos usar com REL também)    
+<a href="http/www.ig.com.br" rel="prev"></> (usada para links internos, PREV quer dizer para página anterior)
+<a href="http/www.ig.com.br" rel="next"></> (usada para links internos, NEXT quer dizer para próxima página)
+
+<a href="http/www.ig.com.br" rel="nofollow"></> (NOFOLLOW é para o mecanismo de busca do navegador não DAR 
+um apontamento (VISIBILIDADE) de volta. DOFOLLOW são aqueles que permitem o Google e outros buscadores apontem de volta 
+o seu site ou blog.)    
+ -->                                                    

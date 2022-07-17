@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Adriano">
+  <meta name="description" content="Telecall">
+  <meta name="keywords" content="Projeto, Telecall">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+
+  <title>Tela de Cadastro CPaaS</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/CPaaS.css">
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/393db28875.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/393db28875.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="./javascript/progressivebar-min.js"></script>
+</head>
+
+<body>
+  <!-- Contato Whatsapp da Telecall -->
+  <a href="https://wa.me/5521936180100?text=Oi!%20Vim%20do%20site%20e%20desejo%20receber%20atendimento"
+    style="position:fixed;width:72px;height:70px;bottom:50px;right:50px;border-radius:50px;text-align:center;font-size:30px;z-index:999997;box-shadow: 1px 1px 2px #888;"
+    target="_blank">
+    <img src="./imagens/zaplogo.png" width="80px" height="80px" alt="Fale Conosco pelo WhatsApp">
+
+    <!-- barra de navegação -->
+    <header>
+      <div class="Container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+          <a href="./CPaaS.html" class="navbar-brand">
+            <img id="logo" src="./imagens/telecall-1.jpg" alt="logo-Telecall" class="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!--Menu hamburguer-->
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <div class="navbar-nav">
+              <div id="darkMode">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fa-solid fas fa-moon"></i>
+                  <i class="fa-solid fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+              <a href="#" class="nav-item nav-link" id="internet-menu">Internet</a>
+              <a href="#" class="nav-item nav-link" id="telefonia-menu">Telefonia</a>
+              <a href="#" class="nav-item nav-link" id="infra-menu">Rede e Infraestrutura</a>
+              <a href="#" class="nav-item nav-link" id="mobilidade-menu">Mobilidade</a>
+              <a href="#" class="nav-item nav-link" id="eventos-menu">Eventos</a>
+              <a href="#" class="nav-item nav-link" id="solucoes-menu">Outras Soluções</a>
+              <!-- Menu CPASS -->
+              <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                  <a id="cpass" href="./CPaaS_P1.html" target="_self" class="nav-link dropdown-toggle"
+                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CPaaS
+                    PLATFORM</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./CPaaS_P1.html">CPaaS: O que é?</a>
+                    <a class="dropdown-item" href="./CPaaS_plataformaSoluc.html">Plataforma e Soluções</a>
+                    <a class="dropdown-item" href="./CPaaS_2fa.html">2FA</a>
+                    <a class="dropdown-item" href="./CPaaS_numeroMascara.html">Número Máscara</a>
+                    <a class="dropdown-item" href="./CPaaS_googleVerCalls.html">Google Verified Calls</a>
+                    <a class="dropdown-item" href="./CPaaS_smsProgramavel.html">SMS programável</a>
+                  </div>
+                </li>
+              </ul>
+              <a href="./CPaaS_login.html" class="nav-item nav-link" id="solucoes-menu">
+                <span><strong>Login</strong><i class="fa-solid fa-circle-user"></i></span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--Config carroussel-->
+      <div class="container-fluid">
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+            <li data-target="#mainSlider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://loja.telecall.com/pabx-ip-aparelho-ip/p"><img id="banner-carroussel"
+                  src="./imagens/banner-desk-pabx-dudu1.png" class="d-block w-100" alt="banners telecall1"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.telecall.com/institucional"><img id="banner-carroussel"
+                  src="./imagens/TELECALL-sala-1.jpg" class="d-block w-100" alt="banners telecall2"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://loja.telecall.com/mobilidade/telefonia-movel"><img id="banner-carroussel"
+                  src="./imagens/mini_movel1.png" class="d-block w-100" alt="banners telecall3">
+            </div>
+  </a>
+  </div>
+  <!-- Botões passam ou voltam figuras no carroussel -->
+  <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  <!-- aumentar e diminuir fonte -->
+  <div class="btn-container" id="aumentaDiminui">
+    <button type="button" id="btnAumentar">A +</button>
+    <button type="button" id="btnDiminuir">A -</button>
+  </div>
+  <!--barra de navegação - Internet-->
+  <div id="about-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="main-title">Internet 100% dedicada para sua empresa</h3>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="./imagens/agencia.jpg" alt="foto escritório Telecall">
+        </div>
+        <div class="col-md-6">
+          <h3 class="about-title">Visão geral</h3>
+          <p>Uma internet exclusiva para a sua empresa com o máximo de qualidade, disponibilidade e segurança.
+            Possui garantia de velocidade contratada e simetria de banda para Download e Upload.
+            A solução também permite o uso de IPs fixos válidos na Internet, garantindo, por exemplo,
+            a possibilidade de publicar um site através de seu próprio acesso. Solução ideal para empresas
+            que necessitam de qualidade, garantia e simetria de banda no acesso a Internet, servindo para acessos
+            a aplicações em nuvens, servidores remotos de e-mail, ligação com outras filiais através de VPNs ou
+            simplesmente em navegação por sites.</p>
+          <ul id="about-list">
+            <li><i class="fas fa-check"></i>Velocidades de 10Mbps a 10Gbps</li>
+            <li><i class="fas fa-check"></i>Acesso fibra ótica</li>
+            <li><i class="fas fa-check"></i>Gestão e monitoramento proativo com NOC 24x7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Serviços da empresa -->
+  <div id="services-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="main-title">Serviços para <strong>Eventos</strong></h3>
+        </div>
+        <div class="col-md-4 service-box">
+          <!-- <i class="fa-solid fa-network-wired"></i> -->
+          <img src="./imagens/internet.jpg" alt="link dedicado">
+          <h4>Link Dedicado Temporário com Wi-fi</h4>
+          <p>Acesso de internet dedicado para seu evento.
+          <p>Conexão com uso de rede cabeada e Wi-Fi para eventos de todos os portes. Garantia de internet dedicada
+            de máxima qualidade, disponibilidade e segurança. A melhor experiência para os seus usuários.</p>
+        </div>
+        <div class="col-md-4 service-box">
+          <!-- <i class="fa-solid fa-server"></i> -->
+          <img src="./imagens/tecnologia.jpg" alt="link dedicado">
+          <h4>Hotspot</h4>
+          <p>Momentos inesquecíveis merecem ser compartilhados. Disponibilize acesso grátis à internet
+            através de login social ou registro de e-mail com o Hotspot e garanta que os convidados do seu evento
+            fiquem
+            sempre conectados.</p>
+          <p>
+            Ainda aproveite os benefícios de marketing como divulgação de banners e vídeos customizados
+            e a coleta de dados dos usuários.</p>
+        </div>
+        <div class="col-md-4 service-box">
+          <!-- <i class="fa fa-server" aria-hidden="true"></i> -->
+          <img src="./imagens/phone.png" alt="link dedicado">
+          <h4>PABX IP Virtual Temporário</h4>
+          <p>Solução de telefonia inteligente temporária para eventos de todo porte. Contempla o fornecimento de
+            aparelhos.</p>
+        </div>
+        <p>*Todas as soluções temporárias são monitoradas em tempo real no local, garantindo a melhor entrega e
+          experiência.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Dados da empresa - Paralax, e círculos animados -->
+  <div id="data-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-6 circle-box">
+          <div id="circleA"></div>
+          <p>Projetos entregues</p>
+        </div>
+        <div class="col-md-3 col-xs-6 circle-box">
+          <div id="circleB"></div>
+          <p>Clientes Felizes</p>
+        </div>
+        <div class="col-md-3 col-xs-6 circle-box">
+          <div id="circleC"></div>
+          <p>Colaboradores</p>
+        </div>
+        <div class="col-md-3 col-xs-6 circle-box">
+          <div id="circleD"></div>
+          <p>Suporte</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Time da Empresa -->
+  <div id="team-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="main-title">Venha Para Nosso Time</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./imagens/profile1.jpg" class="card-img-top" alt="perfil1">
+            <div class="card-body">
+              <h5 class="card-title">João VinTi Scolhêr</h5>
+              <p class="card-text">Analista de Sistemas Pleno</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./imagens/profile2.jpg" class="card-img-top" alt="perfil2">
+            <div class="card-body">
+              <h5 class="card-title">Mari Ján Tôaqui</h5>
+              <p class="card-text">Analista de Sistemas Senior</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./imagens/profile3.jpg" class="card-img-top" alt="perfil3">
+            <div class="card-body">
+              <h5 class="card-title">Pedro Vém Prácà</h5>
+              <p class="card-text">Analista Senior</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img id="img-card" src="./imagens/profile4.jpg" class="card-img-top" alt="perfil4">
+            <div class="card-body">
+              <h5 class="card-title">Maria SóTesPerano</h5>
+              <p class="card-text">Analista de Sistemas Senior</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Trabalhe conosco -->
+  <div id="apply-area">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 apply-box" id="company-img"></div>
+        <div class="col-md-6 apply-box" id="pattern-img">
+          <h4>Gosta de desafios?</h4>
+          <p>Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager e mais.
+          </p>
+          <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+          <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.
+          </p>
+          <a href="https://carreirastelecall.solides.jobs/" class="main-btn" id="apply-btn">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfólio -->
+  <div id="portfolio-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="main-title">Mobilidade - Conheça outros produtos</h3>
+        </div>
+        <div class="col-md-12" id="filter-btn-box">
+          <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+          <button class="main-btn filter-btn" id="dev-btn">Activetrack</button>
+          <button class="main-btn filter-btn" id="dsg-btn">Ponto a Ponto</button>
+          <button class="main-btn filter-btn" id="seo-btn">MVNA/E</button>
+        </div>
+        <div class="col-md-4 project-box dev">
+          <a href="https://www.telecall.com/activtrak"><img src="imagens/activetrack.png" class="img-fluid"
+              alt="activetrack-foto"></a>
+        </div>
+        <div class="col-md-4 project-box dsg">
+          <a href="https://www.telecall.com/rede-e-infraestrutura/callnet-ponto-a-ponto"><img
+              src="imagens/ponto a ponto.jpg" class="img-fluid" alt="ponto a ponto-foto"></a>
+        </div>
+        <div class="col-md-4 project-box seo">
+          <a href="https://www.telecall.com/mobilidade/mvna-e"><img src="imagens/img_mvnae.png" class="img-fluid"
+              alt="MVNA/E"></a>
+        </div>
+        <div class="col-md-4 project-box dev">
+          <img src="imagens/activtrak2.png" class="img-fluid" alt="activetrack-foto1">
+        </div>
+        <div class="col-md-4 project-box dsg">
+          <img src="imagens/ponto a ponto1.jpg" class="img-fluid" alt="ponto a ponto-foto1">
+        </div>
+        <div class="col-md-4 project-box seo">
+          <img src="imagens/sim-card-telefonia-movel-mvno.png" class="img-fluid" alt="MVNA/E-foto1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter -->
+  <div id="news-area">
+    <div class="container">
+      <div class="col-md-12">
+        <h3 class="main-title">Fique por dentro das novidades</h3>
+      </div>
+      <p>Assine nossa lista de e-mails, e receba nossas novidades e preços especiais</p>
+      <form action="">
+        <input type="e-mail" class="form-control" id="email-input" name="e-mail" placeholder="Seu e-mail">
+        <input type="submit" id="news-btn" value="inscrever">
+      </form>
+    </div>
+  </div>
+  <!-- Call to Action -->
+  <div id="call-area">
+    <div class="container">
+      <div class="row">
+        <p>Deseja fazer um orçamento sem compromisso?</p>
+        <button class="main-btn" id="call-btn">Orçar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-tile">Ligue para:</span> (21) 3030-1010</p>
+            <p><span class="contact-tile">Horários:</span> 7:00 - 18:00hs</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-tile">Envie um email:</span> comercial@telecall.com</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-tile" id="contato">Endereço:</span> Av. das Américas, 3434 - Bloco 1 - 505 - Barra
+              da Tijuca, Rio de Janeiro - RJ, 22640-102</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+          <div class="col-md-6" id="contact-form">
+            <form action="">
+              <input type="text" class="form-control" placeholder="E-mail" name="email">
+              <input type="text" class="form-control" placeholder="Assunto" name="subject">
+              <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+              <input type="submit" class="main-btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright por <a href=".//CPaaS.html" target="_blank">Telecall</a> &copy; 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="./javascript/CPaaS.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- 
+<a href="#" class="nav-item nav-link" id="internet-menu">ÁREA DO CLIENTE</a> colocar num container acima
+ 
+
+NOTAS:
+======
+PODEMOS COLOCAR A CHAMADA PARA UM ARQUIVO javaScript, dentro da tag HEAD (de um modo mais moderno, pois antes para não 
+dar problemas no carregamento da página colocava-se antes do fim da tag BODY -</body>), bastando somente colocar a seguinte sintaxe: 
+<script src="./javascript/CPaaS.js" defer></script> (notem o uso da palavra o DEFER que tira o problema do carregamento da página)
+
+
+LINHA 33: navbar-dark (MENU HAMBÚRGUER). Quando coloca este atributo, aparece o menu na responsividade.
+LINHA 42: id="navbar-links é o mesmo atributo da linha 39 (data-target="#navbar-links"). Efeito Menu Hamburguer
+LINHA 57: configura o slider. FLUID - trabalha com a largura total da página
+LINHA 60: configura o SLIDER de onde começa, ou seja na posição 0 e deixa CLASSE="ACTIVE" como única, pois é de onde começa.
+LINHA 65: a class está como ACTIVE, pois referencia o início do SLIDE na linha 60, e na linha 65 da imagem por onde começa. 
+          Por isso inicia como ACTIVE. O mesmo vale para as linhas 75, 85 também, quanto aO ACTIVE
+
+LINHA 76 e 80: ícones anterior e próxima (previous or next)
+LINHA 85: class: container limita a área, e já espera a divisão em colunas para formatar em grids as páginas.
+LINHA 86: class: ROW - São as linhas do bootstrap. Dentro separamos as próximas divs no GRID DE COLUNAS
+LINHA 87: Largura total de colunas. Nas divs abaixo, aparecem divididas duas colunas com largura máxima de 6, que perfazem o total do GRID 
+          principal que tem 12, independente dos dispositivos
+
+LINHA 91: class:col-md-6 - bootstrap respeita certa largura, até determinada largura da tela (media-queries já configuradas no bootsrap).
+          notar que as imagens já se adequam devido a configuração das media-queries da classe (img-fluid e da col-md-6)
+
+LINHA 257: Class ACTIVE no button deixa o primeiro botão como marcado na página. E quando clicamos por algum motivo, este ficará ativo
+LINHA 292:  name="e-mail" - Este NAME a gente coloca para no backend ser reconhecido no formulário como campo e-mail.
+
+ALGUMAS CONFIGURAÇÕES DO CARROUSSEL (LETRAS ABAIXO DAS FIGURAS - FIGCAPTION)
+
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2>Estar querendo tirar o processo do papel?</h2>
+                    <p>Nossa Equipe está pronta para lhe atender.</p>
+                    <a href="#" class="main-btn">Entre em</a>
+                    </div> -->
+
+<!-- <div class="carousel-caption d-none d-md-block">
+                        <h2>Quer criar um e-commerce?</h2>
+                        <p>Conte Conosco, temos mais de 30 lojas no portfólio.</p>
+                        <a href="#" class="main-btn">Ver portfólio</a>
+                    </div> -->
+
+<!-- <div class="carousel-caption d-none d-md-block">
+                    <h2>Está buscando Manutenção para seu software?</h2>
+                    <p>Nós temos diversos planos para lhes ajudar.</p>
+                    <a href="#" class="main-btn">Entre em contato</a>
+                    </div> -->
+
+
+<!-- 
+    ÍTEM PRINCIPAL - CPASS (fica na barra de navegação), caso precisa voltar ao modo principal
+
+    <a href="./CPaaS_P1.html" target="_self" class="nav-item nav-link" id="cpass-menu">CPasS</a> 
+-->
+
+<!-- 
+    OUTROS ÍCONES PARA USO NO (Serviços da empresa)
+    
+    
+    <div class="col-md-4 service-box">
+    <i class="fab fa-google"></i>
+    <h4>Experts em SEO</h4>
+    <p>Com nosso serviço de marketing seu site será melhor posicionado no Google e venderá mais.</p>
+  </div>
+  <div class="col-md-4 service-box">
+    <i class="fas fa-hands-helping"></i>
+    <h4>Suporte 24/7</h4>
+    <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas. (chat, email, skype)</p>
+  </div>
+  <div class="col-md-4 service-box">
+    <i class="fas fa-server"></i>
+    <h4>Experiência em servidores</h4>
+    <p>Garantimos uptime e também rápido tempo de resposta do seu site para o seu cliente.</p>
+  </div> -->
